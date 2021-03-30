@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Go语言高级编程](README.md)
 * [ch1-basic](ch1-basic/README.md)
   * [第1章 语言基础](ch1-basic/di-1-zhang-yu-yan-ji-chu.md)
   * [1.1 Go语言创世纪](ch1-basic/1.1-go-yu-yan-chuang-shi-ji.md)
