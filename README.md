@@ -1,160 +1,43 @@
-Go 语言学习资料与社区索引
-==============
+# Introduction
 
+## Go语言高级编程\(Advanced Go Programming\) <a id="go&#x8BED;&#x8A00;&#x9AD8;&#x7EA7;&#x7F16;&#x7A0B;advanced-go-programming"></a>
 
-鉴于之前有人做的 [索引资料](https://github.com/wonderfo/wonderfogo/wiki) 已经过期超过 ~2~3 年，所以特开此坑。各位同学可以通过发起 Fork + Pull Request 的方式进行补充和更新。
+本书涵盖CGO、Go汇编语言、RPC实现、Web框架实现、分布式系统等高阶主题，针对Go语言有一定经验想深入了解Go语言各种高级用法的开发人员。对于刚学习Go语言的读者，建议先从[《Go语言圣经》](https://github.com/golang-china/gopl-zh)开始系统学习Go语言的基础知识。如果希望了解Go2的最新动向，可以参考[《Go2编程指南》](https://github.com/chai2010/go2-book)。
 
-**最后更新时间**：2020 年 03 月 24 日
+* 作者：柴树杉，Github [@chai2010](https://github.com/chai2010)，Twitter [@chaishushan](https://twitter.com/chaishushan)
+* 作者：曹春晖，Github [@cch123](https://github.com/cch123)
+* 网址：[https://github.com/chai2010/advanced-go-programming-book](https://github.com/chai2010/advanced-go-programming-book)
 
-## 交流社区
+### 在线阅读 <a id="&#x5728;&#x7EBF;&#x9605;&#x8BFB;"></a>
 
-### 中文社区
+* [https://chai2010.cn/advanced-go-programming-book/](https://chai2010.cn/advanced-go-programming-book/)
+* [https://www.gitbook.com/book/chai2010/advanced-go-programming-book/](https://www.gitbook.com/book/chai2010/advanced-go-programming-book/)
 
- - [Golang 中国](http://www.golangtc.com/)：国内较早的 Go 社区，汇聚各类信息与服务
- - [Study Golang](http://studygolang.com/)：国内 Go 社区先驱，同样汇聚各类信息与服务
- - [Revel 交流论坛](http://gorevel.cn/)：[Revel](https://github.com/revel/revel) 框架的中文社区
- - [GoCN Forum](https://gocn.vip/)：Go 语言爱好者中文交流论坛
- - [IGO.PUB Go社区](https://igo.pub/)：Go语言技术社区（新），完美主义者社区
- - [Go 技术论坛](https://learnku.com/go): Golang / Go 语言中国知识社区
- - QQ 群：
- 	- Go Web 交流群：259316004
- 	- Golang 中国：211938256
- 	- Go 内部实现与标准库：192706294
- 	- Go 编程语言：102319854
- 	- Martini&Macaron 交流群：371440803
- 	- Golang 新手群：369793160
+### 关注微信公众号\(golang-china\) <a id="&#x5173;&#x6CE8;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;golang-china"></a>
 
-### 英文社区
+### 版权声明 <a id="&#x7248;&#x6743;&#x58F0;&#x660E;"></a>
 
-- [Go Forum](https://forum.golangbridge.org/)：Go 语言爱好者英文交流论坛
-- [golang-nuts 邮件列表](https://groups.google.com/forum/#!forum/golang-nuts)：Go 语言官方指定邮件列表讨论区
-- [Go+ 社区](https://plus.google.com/u/0/communities/114112804251407510571)：Go 语言官方指定 G+ 社区
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)。
 
-### 知识图谱
-- [Go Knowledge Graph](https://github.com/gocn/knowledge)：Go 知识图谱
+严禁任何商业行为使用或引用该文档的全部或部分内容！
 
-## 网址导航
+欢迎大家提供建议！
 
-- 官方：
-    - [Go 中国站点](https://golang.google.cn/): Go 语言中国官方站点(无需翻墙)
-	- [Playground](http://play.golang.org)：Go 语言代码在线运行
-- 国内镜像：
-	- [Go 指南国内镜像](http://tour.golangtc.com/)
-	- [Go 语言国内下载镜像](http://www.golangtc.com/download)
-	- [Go 官方网站国内镜像](http://docs.studygolang.com/)
-- Web 框架：
-	- [Macaron](https://go-macaron.com/)：模块化 Web 框架
-	- [Beego](http://beego.me/)：重量级 Web 框架
-	- [Revel](https://github.com/revel/revel)：较早成熟的重量级 Web 框架
-	- [Martini](https://github.com/go-martini/martini): 一个强大为了编写模块化 Web 应用而生的 Go 语言框架
-	- [Echo](https://echo.labstack.com/): 功能模块齐全, 上手容易, 文档示例齐全
-	- [Gin](https://github.com/gin-gonic/gin)：轻量级 HTTP Web 框架
-	- [Iris](https://github.com/kataras/iris)：Iris 是基于 Go 编写的一个快速，简单但功能齐全且非常高效的 Web 框架
-- ORM 以及数据库驱动：
-	- [xorm](https://github.com/go-xorm/xorm)：支持 MySQL、PostgreSQL、SQLite3 以及 MsSQL
-	- [mgo](http://labix.org/mgo)：MongoDB 官方推荐驱动
-	- [gorm](https://github.com/jinzhu/gorm): 全功能 ORM (无限接近) 支持 MySQL、PostgreSQL、SQLite3 以及 MsSQL
-	- [gosql](https://github.com/rushteam/gosql):  gosql 一款全新ORM go-style风格、轻量、简单、强大 支持 MySQL
-- 辅助站点：
-	- [Go Walker](https://gowalker.org)：Go 语言在线 API 文档
-	- [gobuild.io](http://gobuild.io/)：Go 语言在线二进制编译与下载
-	- [Rego](http://regoio.herokuapp.com/)：Go 语言正则在线测试
-	- [gopm.io](https://gopm.io)：科学下载第三方包
-    - [Json To Go struct](https://mholt.github.io/json-to-go/):Convert JSON to Go struct在线工具
-- 开发工具：
-    - [Emacs24](http://ftp.gnu.org/gnu/emacs/)：[配置脚本](https://github.com/wackonline/hack/blob/master/install-mint-dev/install-emacs.d.sh) / [(中文社区)](http://emacser.com/)
-	- [LiteIDE](https://github.com/visualfc/liteide)
-	- [Sublime Text 2/3](http://sublimetext.com)：[配置教程](http://my.oschina.net/Obahua/blog/110767)
-	- [GoLand](https://www.jetbrains.com/go/?fromMenu)
-    - [Atom](https://atom.io)：[配置插件](https://atom.io/packages/go-plus)（感觉还不错，类似 Sublime，配置比较简单）
-    - [VIM](http://www.vim.org)：[配置插件](https://github.com/humiaozuzu/dot-vimrc)（嫌 vim 配置麻烦的童鞋可以直接用这个）
-- 学习站点：
-	- [Go by Example](https://gobyexample.com/)
-	- [Go database/sql tutorial](http://go-database-sql.org/)
-- 支持 Go 的云平台：
-	- [Koding](https://koding.com/)
-	- [Nitrous.IO](https://www.nitrous.io/)
-	- [Get up and running with Go on Google Cloud Platform]( https://cloud.google.com/go/)
-	- [AWS SDK for Go - Developer Preview](http://aws.amazon.com/cn/sdk-for-go/):=>[github](https://github.com/aws/aws-sdk-go)
-	- [azure sdk for go](https://godoc.org/github.com/Azure/azure-sdk-for-go):=>[github](https://github.com/Azure/azure-sdk-for-go)
-        - [How to Use CoreOS on Azure](https://azure.microsoft.com/zh-cn/documentation/articles/virtual-machines-linux-coreos-how-to/)
-        - [Create Azure Web app with GoLang extension](https://azure.microsoft.com/zh-cn/documentation/templates/101-webapp-with-golang/)
-    - [Qiniu](https://www.qiniu.com)
-    	- [Qiniu SDK for Go](http://developer.qiniu.com/docs/v6/sdk/go-sdk.html):=>[github](https://github.com/qiniu/api.v6)
-- 其它站点：
-	- [Golang 杂志](https://flipboard.com/section/the-golang-magazine-bJ1GqB)：[订阅说明](http://bbs.go-china.org/post/476)
-	- [Reddit](http://www.reddit.com/r/golang/)
-	- [Newspaper.IO](http://www.newspaper.io/golang)：Golang 新闻订阅
-	- [Go Newsletter](http://www.golangweekly.com/)：Golang 新闻订阅
+## 序言 <a id="&#x5E8F;&#x8A00;"></a>
 
-## 资料汇总
+2009年11月，Google发布了Go语言，在世界范围内引发了轰动。2015年和2016年中国区的Go语言大会分别在上海和北京召开，来自Go语言团队的开发人员均作了相关的报告。纵观这几年来的发展趋势，Go语言已经成为云计算、云存储时代最重要的基础编程语言。
 
-### 中文资料
+中国的Go语言社区是全球最大的Go语言社区，我们不仅仅从一开始就始终紧跟着Go语言的发展脚步，同时也为Go语言的发展作出了自己的巨大贡献。来自中国深圳的韦光京（vcc.163@gmail.com）在2010年前后，关于MinGW的工作奠定了Go语言对Windows平台的支持，同时也奠定了CGO对Windows平台的支持。同样来自中国的Minux（minux.ma@gmail.com）则作为Go语言核心团队的成员，他参与了大量的Go语言核心设计和开发评审工作。同时还有大量的国内Go语言爱好者积极参与了BUG的汇报和修复等工作（作者也是其中之一）。
 
-- 书籍：
-	- [《深入解析Go》](https://github.com/tiancaiamao/go-internals)
-	- [《Go实战开发》](https://github.com/astaxie/Go-in-Action)
-	- [《Go入门指南》](https://github.com/Unknwon/the-way-to-go_ZH_CN)
-	- [《Go语言标准库》](https://github.com/polaris1119/The-Golang-Standard-Library-by-Example)
-	- [《Go Web 编程》](https://github.com/astaxie/build-web-application-with-golang)
-	- [《Go语言博客实践》](https://github.com/achun/Go-Blog-In-Action)
-	- [《Go语言学习笔记》](https://github.com/qyuhen/book)
-	- [《Go语言高级编程》](https://github.com/chai2010/advanced-go-programming-book)
-- 翻译：
-	- [Effective Go](https://golang.org/doc/effective_go.html) 英文版
-	- [The Way to Go](https://github.com/Unknwon/the-way-to-go_ZH_CN) 中文版
-	- [《Learning Go》](https://github.com/miekg/gobook)英文版:=>[《Learning Go》](https://github.com/mikespook/Learning-Go-zh-cn) 中文版
-- 教程：
-	- [《Go编程基础》](https://github.com/Unknwon/go-fundamental-programming)
-	- [《Go Web基础》](https://github.com/Unknwon/go-web-foundation)
-	- [《Go名库讲解》](https://github.com/Unknwon/go-rock-libraries-showcases)
-	- [Go 命令教程](https://github.com/hyper-carrot/go_command_tutorial)
+截至2018年，中国出版的Go语言相关教程有近15本之多，内容主要涵盖Go语言基础编程、Web编程、并发编程和内部源码剖析等诸多领域。但作为Go语言的资深用户，作者关注的Go语言话题远远不止这些内容。其中CGO特性实现了Go语言对C语言和C++语言的支持，使得Go语言可以无缝继承C/C++世界数十年来积累的巨大软件资产。Go汇编语言更是提供了直接访问底层机器指令的方法，让我们可以无限压榨程序中热点代码的性能。目前国内互联网公司的新兴项目已经在逐渐向Go语言生态转移，大型分布式系统的开发实战经验也是大家关心的。这些高阶或前沿特性都是作者和本书所关注的话题。
 
-### 英文资料
+本书针对有一定Go语言经验，想深入了解Go语言各种高级用法的开发人员。对于Go语言新手，在阅读本书前建议先熟读D&K的[《The Go Programming Language》](https://gopl.io/)。最后，希望这本书能够帮助大家更深入地了解Go语言。
 
-- 文档：
-	- [Go Code Review Comments](https://code.google.com/p/go-wiki/wiki/CodeReviewComments)：Go 语言代码风格指导
-	- [Go Code Convention](https://github.com/Unknwon/go-code-convention)：无闻的 Go 语言编码规范
-	- [Uber Go Guide](https://github.com/xxjwxc/uber_go_guide_cn): Uber Go 语言编码规范
-	- [GopherCon 2014](https://github.com/gophercon/2014-talks)
-	- [GopherCon 2015](https://github.com/gophercon/2015-talks)
-	- [GopherCon 2016](https://github.com/gophercon/2016-talks)
-	- [GopherCon 2017](https://github.com/gophercon/2017-talks)
-- 书籍：
-	- [Network programming with Go](http://jan.newmarch.name/go/)：[中文版](https://github.com/astaxie/NPWG_zh)
-	- [Practical Cryptography With Go](https://leanpub.com/gocrypto/read#leanpub-auto-select-bibliography)
-	- [An Introduction to Programming in Go](http://www.golang-book.com/)
-	- [Go Bootcamp](http://www.golangbootcamp.com/book)
-	- [Mastering Concurrency in Go(July 2014)Nathan Kozyra](https://www.packtpub.com/application-development/mastering-concurrency-go)
-	- [Go Programming Blueprints(January 23,2015)](https://www.packtpub.com/application-development/go-programming-blueprints)
-	- [The Go Programming Language(Published Oct 30, 2015,Not Yet Published)](http://www.gopl.io/)
-	- [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
+chai2010 - 2018年 8 月 于 武汉
 
-### 视频资料
+## 致谢 <a id="&#x81F4;&#x8C22;"></a>
 
-- 基础：
-	- Go Slices and Bytes - Shakeel Mahate：[优酷视频](http://v.youku.com/v_show/id_XNjkzMjM1Mjg4.html) - [Youtube](http://www.youtube.com/watch?v=dKlNSIUSfz0)
-- COSCUP 2013:
-	- Golang & ORM - 林佑安：[优酷视频](http://v.youku.com/v_show/id_XNjkzMTQ1MjYw.html) - [Youtube](http://www.youtube.com/watch?v=VwAtYGyjTks)
-- GopherCon：
-	- 2014：[Youtube](https://www.youtube.com/playlist?list=PL2ntRZ1ySWBcD_BiJiDJUcyrb2w3bTulF)
-	- 2015：[Youtube](https://www.youtube.com/playlist?list=PL2ntRZ1ySWBf-_z-gHCOR2N156Nw930Hm)
-	- 2016：[Youtube](https://www.youtube.com/playlist?list=PL2ntRZ1ySWBdliXelGAItjzTMxy2WQh0P)
-	- 2017：[Youtube](https://www.youtube.com/playlist?list=PL2ntRZ1ySWBdD9bru6IR-_WXUgJqvrtx9)
-	- 2018：[Youtube](https://www.youtube.com/playlist?list=PL2ntRZ1ySWBdatAqf-2_125H4sGzaWngM)
-	- 2019：[Youtube](https://www.youtube.com/playlist?list=PL2ntRZ1ySWBdDyspRTNBIKES1Y-P__59_)
-- Golang UK Conference：
-	- 2015：[Youtube](https://www.youtube.com/playlist?list=PLDWZ5uzn69ezRJYeWxYNRMYebvf8DerHd)
-	- 2016：[Youtube](https://www.youtube.com/playlist?list=PLDWZ5uzn69eyh791ZTkEA9OaTxVpGY8_g)
-	- 2017：[Youtube](https://www.youtube.com/playlist?list=PLDWZ5uzn69eyM81omhIZLzvRhTOXvpeX9)
-	- 2018：[Youtube](https://www.youtube.com/playlist?list=PLDWZ5uzn69ewsMyuGjVsAnpQIjyud1Cv9)
-	- 2019：[Youtube](https://www.youtube.com/playlist?list=PLDWZ5uzn69ezokLCB-nGgYInxL0uP1PeZ)
-	
-- GopherCon India 2015: [Youtube](https://www.youtube.com/playlist?list=PLxFC1MYuNgJTY3uQ5Ja4F5Sz305nnrBOq)
+首先感谢Go语言之父和每一个为Go语言提交过补丁的朋友。感谢fango的第一本以Go语言为主题的网络小说《胡文Go.ogle》和第一本中文Go语言图书《Go语言·云动力》，是你的分享让带起了大家学习Go语言的热情。感谢韦光京对Windows平台CGO的开创性工作，不然本书可能不会有专门的CGO章节。感谢为本书提交过issue或PR的朋友（特别是fuwensun、lewgun等），你们的关注和支持是作者写作的最大动力。
 
+谢谢大家！
 
-## 职业信息
-
-- Go/Golang jobs：
-	- 官方网站：http://www.golangprojects.com/
-	- Twitter: [@golangprojects](https://twitter.com/golangprojects) 
